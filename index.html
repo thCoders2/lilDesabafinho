@@ -6,3 +6,26 @@
 <!-- textArea bonito que cresce verticalmente conforme linhas aparecem -->
 <!-- textArea acima de 1500 caracteres ele fica mais largo, reajusta altura automaticamente, toca static/sons/comboUp.mp3 -->
 <!-- textArea reduzido de 1500 caracteres, volta 50% da largura que fora expandida, toca static/sons/comboDown.mp3  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soltar aquele lilBafo</title>
+    <!-- scripts de estilização -->
+    <link rel="stylesheet" href="static/css/tailwind.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/myShits.css">
+</head>
+<body>
+    <header>
+        <button id="toggleSound" onclick="toggleSound()">
+            <img src="static/imgs/somAtivado.png" alt="Ativar/Desativar Som" id="soundImage">
+        </button>
+    </header>
+    <h1>Soltar aquele lilBafo (pequeno desabafo)</h1>
+    <textarea id="desabafoArea" placeholder="Escreva seu desabafo aqui..." oninput="adjustTextArea()"></textarea>
+    <script src="static/js/lilDesabafo.js"></script>
+</body>
+</html>
