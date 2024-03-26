@@ -28,10 +28,10 @@ function adjustTextArea() {
 
     // Ajusta a largura e toca o som conforme a quantidade de caracteres
     if (textLength > 1500) {
-        textArea.style.width = '100%';
+        textArea.style.width = '85%';
         if (soundEnabled) comboUpSound.play();
     } else {
-        textArea.style.width = '50%';
+        textArea.style.width = '65%';
         if (soundEnabled) comboDownSound.play();
     }
 }
